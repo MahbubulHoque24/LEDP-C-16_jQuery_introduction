@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <title>jQuery</title>
+  </head>
+  <body>
+
+    <div class="container p-5 m-5">
+      
+      <button class="btn btn-danger">Red</button>
+      <button class="btn btn-success">green</button>
+      <button class="btn btn-primary">Blue</button>
+      <button class="btn btn-dark">Black</button>
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- jQuery-start -->
+    <script>
+
+
+    $(function(){
+
+      $('.btn-danger').click(function(){
+        $('h4').addClass('bg-danger text-white');
+        $('h4').removeClass('bg-success bg-primary bg-dark');
+      });
+      $('.btn-success').click(function(){
+        $('h4').addClass('bg-success text-white');
+        $('h4').removeClass('bg-danger bg-primary bg-dark');
+      });
+      $('.btn-primary').click(function(){
+        $('h4').addClass('bg-primary text-white');
+        $('h4').removeClass('bg-danger bg-success bg-dark');
+      });
+      $('.btn-dark').click(function(){
+        $('h4').addClass('bg-dark text-white');
+        $('h4').removeClass('bg-danger bg-primary bg-success');
+      });
+
+    });
+
+      
+    </script>
+    <!-- jQuery-end -->
+
+  </body>
+</html>
